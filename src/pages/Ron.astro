@@ -1,22 +1,46 @@
 ---
-
+import Bebida from '../components/Bebidas.astro';
 ---
 
-<main>
-    <div class="cocteles">
-        <p class="titulos">La Fresa</p>
-        <hr />
-        <p class="ingredientes">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
-            consectetur voluptatem itaque nemo nam accusantium iste, veniam
-            assumenda voluptatibus ullam delectus suscipit in quisquam dolorum,
-            nostrum sint, impedit facere nulla.
-        </p>
-        <p class="metodo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aut
-            accusamus quasi neque quidem autem, perspiciatis quae ullam fugit
-            placeat vel amet, unde earum mollitia! At aspernatur a laborum cum.
-        </p>
-    </div>
-    <hr>
-</main>
+<div class="numero1">
+    <!--<Bebida 
+     tituloBebida='La Fresa'
+     ingredientes='Ingredientes:1oz de ron. Licor de naranja (curacao).Pure de fresa'
+     metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir "
+     /> -->
+     <Bebida
+     tituloBebida="La Fresa"
+     ingredientes={`Ingredientes:
+     - 1oz de ron
+     - Licor de naranja (curacao)
+     - Pure de fresa`}
+     metodo={`Preparacion:
+     Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir.`}
+     />
+    <Bebida 
+    tituloBebida='Piña Colada'
+    ingredientes='Ingredientes: - 1oz de ron  - Jugo de Pina - Hielos - Lechera - Crema de Coco'
+    metodo='Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu)Se puede agregar canela y decorar con popotes '
+    
+    />
+    <!--<Bebida 
+    tituloBebida='Fresa Colada'
+    ingredientes='Ingredientes: 1oz de ron. Fresa. Lechera. Leche clavel. Crema de coco. Hielo'
+    metodo='Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu) Se puede decorar con fresas partidas y un popote'
+    /> -->
+    <Bebida 
+    tituloBebida='Fresa Colada'
+    ingredientes='Ingredientes - 1oz de ron - Fresa - Lechera - Leche clavel - Crema de coco - Hielo'
+    metodo='Licuar todos los ingredientes a punto de nieve (pueden agregar malibu)Se puede decorar con fresas partidas y un popote'
+    />
+    <Bebida 
+    tituloBebida='Beso Playero'
+    ingredientes='Ingredientes:'  
+    ingredientes='2oz de malibu - Jarabe natural - Jugo de limon - Jugo de pinia - Dash de granadina.'
+    metodo='En coctelera o shaker, agitar malibu, jugo de limon. Jugo de pina, jarabe natural. y finalizar con dash de granadina '
+    />
+    <Bebida
+    tituloBebida='Mojito'
+    ingredientes='Ingredeintes: - 1oz de ron - 1 1/2 cucharada de azucar - 1/'
+    />
+</div>

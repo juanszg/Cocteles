@@ -1,0 +1,71 @@
+---
+interface Props {
+    tituloBebida: string;
+    ingredientes: string;
+    metodo: string;
+}
+const { tituloBebida, ingredientes, metodo } = Astro.props;
+---
+
+<div class="grid-1">
+    <div class="cocteles">
+        <h1 class="titulos">{tituloBebida}</h1>
+        <hr /><br>
+        <h3 class="ingredientes">
+            {ingredientes}
+        </h3>
+        <p class="metodo">
+            {metodo}
+        </p>
+    </div>
+    <div class="imagen-coctel">
+        <!--<img src="/src/pages/Appleton_Estate.jpg"> -->
+    </div>
+</div>
+<style>
+    * {
+        margin: 0;
+        padding: 0px;
+    }
+    body {
+        font-family:gabarito;
+        background-color: rgb(6, 0, 41);
+        color: aliceblue;
+    }
+    .grid-1 {
+        margin: 2em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .cocteles {
+        grid-area: 1 / 1 / 2 / 3;
+        padding: 1em;
+        margin: 1.5em;
+    }
+    .imagen-coctel {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .imagen-coctel img {
+        width: 18em;
+        height: 31em;
+        margin: 2.5em;
+        border-radius: 10px;
+    }
+    .titulos {
+        font-size: 4em;
+    }
+    .ingredientes{
+        font-size: 1.4em;
+        color: rgb(137, 228, 251);
+    }
+    p {
+        font-size: 1.2em;
+        padding: 0.3em;
+        font-weight: 100;
+        color: azure;
+        margin-top: .5em;
+    }
+</style>

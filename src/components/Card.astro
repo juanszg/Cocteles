@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { href, title, body } = Astro.props;
+import botella from '../pages/Appleton_Estate.jpg';
 ---
 
 <li class="link-card">
@@ -17,6 +18,7 @@ const { href, title, body } = Astro.props;
 		<p>
 			{body}
 		</p>
+		<!-- <img src={botella} /> -->
 	</a>
 </li>
 <style>

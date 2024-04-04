@@ -6,8 +6,12 @@ import Ron from './Ron.astro';
 ---
 
 <Layout title="Cocteles">
-	<main>
-		<h1><span class="text-gradient">COCTELERIA</span></h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+	
+<main>
+		<h1><span class="text-gradient">COCTELES</span></h1>
 	
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -16,7 +20,7 @@ import Ron from './Ron.astro';
 				body="Encontraras 11 cocteles de Ron"
 			/>
 			<Card
-				href=""
+				href="/Vodka"
 				title="Vodka"
 				body="Encontraras 21 cocteles de Vodka"
 			/>
@@ -36,10 +40,11 @@ import Ron from './Ron.astro';
 				body="Encontraras 5 cocteles de Ginebra"
 			/>
 		</ul>
-	</main>
+</main>
 </Layout>
 
 <style>
+
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -60,7 +65,7 @@ import Ron from './Ron.astro';
 		z-index: -1;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
@@ -90,7 +95,7 @@ import Ron from './Ron.astro';
 		border-radius: 4px;
 		padding: 0.3em 0.4em;
 	}
-	.instructions strong {
+	.instructions srong {
 		color: rgb(var(--accent-light));
 	}
 	.link-card-grid {

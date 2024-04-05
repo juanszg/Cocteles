@@ -5,9 +5,10 @@ interface Props {
     tituloBebida: string;
     ingredientes: string;
     metodo: string;
-    coctel: string;
+    /*imagen:any;
+    coctel: string;*/
 }
-const { tituloBebida, ingredientes, metodo,coctel } = Astro.props;
+const { tituloBebida, ingredientes, metodo} = Astro.props;
 ---
 
 <div class="grid-1">
@@ -21,12 +22,13 @@ const { tituloBebida, ingredientes, metodo,coctel } = Astro.props;
             {metodo}
         </p>
     </div>
-    <div class="imagen-coctel">
+    <!-- <div class="imagen-coctel">
+        {imagen}
         <figure>
             <img src={coctel}>
-        </figure> 
-        <!--<img src="/src/pages/Appleton_Estate.jpg"> -->
-    </div>
+        </figure>  
+        <img src="/src/pages/Appleton_Estate.jpg">
+    </div> -->
 </div>
 <style>
     * {
@@ -38,6 +40,7 @@ const { tituloBebida, ingredientes, metodo,coctel } = Astro.props;
         background-color: rgb(6, 0, 41);
         color: aliceblue;
     }
+    /*
     .grid-1 {
         margin: 2em;
         display: grid;
@@ -59,7 +62,7 @@ const { tituloBebida, ingredientes, metodo,coctel } = Astro.props;
         height: 25em;
         margin: 2.5em;
         border-radius: 10px;
-    }
+    }*/
     .titulos {
         font-size: 4em;
     }

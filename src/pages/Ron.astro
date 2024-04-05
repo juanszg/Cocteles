@@ -1,5 +1,8 @@
 ---
 import Bebida from "../components/Bebidas.astro";
+import { Image } from "astro:assets";
+import botellaRon from "../images/Appleton_Estate.jpg";
+
 ---
 
 <div class="numero1">
@@ -8,77 +11,184 @@ import Bebida from "../components/Bebidas.astro";
      ingredientes='Ingredientes:1oz de ron. Licor de naranja (curacao).Pure de fresa'
      metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir "
      /> -->
-    <Bebida
-        tituloBebida="La Fresa"
-        ingredientes="Ingredientes:- 1oz de ron- Licor de naranja (curacao)- Pure de fresa"
-        metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir."
-        coctel='src\pages\Imagen1.jpg'
-        />
-    <Bebida
-        tituloBebida="Piña Colada"
-        ingredientes="Ingredientes: - 1oz de ron  - Jugo de Pina - Hielos - Lechera - Crema de Coco"
-        metodo="Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu)Se puede agregar canela y decorar con popotes "
-    />
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="La Fresa"
+                ingredientes="Ingredientes:- 1oz de ron- Licor de naranja (curacao)- Pure de fresa"
+                metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir."
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Piña Colada"
+                ingredientes="Ingredientes: - 1oz de ron  - Jugo de Pina - Hielos - Lechera - Crema de Coco"
+                metodo="Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu)Se puede agregar canela y decorar con popotes "
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
     <!--<Bebida 
     tituloBebida='Fresa Colada'
     ingredientes='Ingredientes: 1oz de ron. Fresa. Lechera. Leche clavel. Crema de coco. Hielo'
     metodo='Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu) Se puede decorar con fresas partidas y un popote'
     /> -->
-    <Bebida
-        tituloBebida="Fresa Colada"
-        ingredientes="Ingredientes - 1oz de ron - Fresa - Lechera - Leche clavel - Crema de coco - Hielo"
-        metodo="Licuar todos los ingredientes a punto de nieve (pueden agregar malibu)Se puede decorar con fresas partidas y un popote"
-    />
-    <Bebida
-        tituloBebida="Beso Playero"
-        ingredientes="Ingredientes:"
-        ingredientes="2oz de malibu - Jarabe natural - Jugo de limon - Jugo de pinia - Dash de granadina."
-        metodo="En coctelera o shaker, agitar malibu, jugo de limon. Jugo de pina, jarabe natural. y finalizar con dash de granadina "
-    />
-    <Bebida
-        tituloBebida="Mojito"
-        ingredientes="Ingredeintes: - 1oz de ron - 1 1/2 cucharada de azucar - 1/"
-        metodo="En un vaso agregar las hojas de hierbabuena y azúcar machacar ligeramente agregar jugo de limón posteriormente hielos, ron y rellenar con agua mineral ( se puede agregar jarabe natural )"
-    />
-    <Bebida 
-    tituloBebida="Mojito de Coco"
-    ingredientes="Ingredientes: - 1 1/2 oz de malibu - azucar - jugo de limon - hierbabuena - agua mineral - jugo de pina"
-    metodo="En un vaso agregar los hielos de hierbabuena y azúcar, machacar ligeramente, agregar jugo delimón, crema de coco, jugo de piña, remover. Agregar hielos, agregar ron y finalizar con agua mineral "
-    />
-    <Bebida 
-    tituloBebida="Hollywood de Noche"
-    ingredientes="Ingredientes: - 1 1/2 oz de malibu - 1 dash de midori - 3 oz de jugo de pina - 1 dash de ron - agua mineral "
-    metodo="En un vaso con hielos agregar ron malibu, ron jugo de piña(bastante cantidad) agua mineral y finalizar con dash de granadina "
-    />
-    <Bebida 
-    tituloBebida="Purple Sky"
-    ingredientes="Ingredientes: - 1 oz jugo de naranja - 1 oz de jugo de pina - 1 oz de ron - 1 oz de ron de coco - 1 oz de curacao "
-    metodo="Granadina junto con hielos. En un vaso con hielo verter todos los ingredientes finalizando con dash de granadina (se puede hacer a punto frozen)"
-    />
-    <Bebida 
-    tituloBebida="Rosa"
-    ingredientes="Ingredientes: - Hielo - 2 oz de ron - Granadina - 1 oz de crema de coco - Leche clavel - Jugo de pina" 
-    metodo="En shaker o coctelera agitar crema de coco, clavel, ron, jugo de piña. Verter en un vaso con hielo y agregar dash de granadina " 
-    />
-    <Bebida 
-    tituloBebida="Luces de Habana"
-    ingredientes="Ingredientes: - 1 1/2 oz de ron de coco - Jugo de naranja - Jugo de pina - Midori"
-    metodo="En un vaso con hielo agregar ron cantidades iguales de jugo de naranja y piña finalizar con midori"
-    />
-    <Bebida
-    tituloBebida="Spare Time"
-    ingredientes="Ingredientes: - 1  oz de ron - 1 oz de Malibu - 1/2 oz de curacao - Jugo de pina"
-    metodo="En un vaso con hielo agregar ron, ron malibu, rellenar con jugo de piña y agregar dash de curacao "
-    />
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Fresa Colada"
+                ingredientes="Ingredientes - 1oz de ron - Fresa - Lechera - Leche clavel - Crema de coco - Hielo"
+                metodo="Licuar todos los ingredientes a punto de nieve (pueden agregar malibu)Se puede decorar con fresas partidas y un popote"
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Beso Playero"
+                ingredientes="Ingredientes:"
+                ingredientes="2oz de malibu - Jarabe natural - Jugo de limon - Jugo de pinia - Dash de granadina."
+                metodo="En coctelera o shaker, agitar malibu, jugo de limon. Jugo de pina, jarabe natural. y finalizar con dash de granadina "
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Mojito"
+                ingredientes="Ingredeintes: - 1oz de ron - 1 1/2 cucharada de azucar - 1/"
+                metodo="En un vaso agregar las hojas de hierbabuena y azúcar machacar ligeramente agregar jugo de limón posteriormente hielos, ron y rellenar con agua mineral ( se puede agregar jarabe natural )"
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Mojito de Coco"
+                ingredientes="Ingredientes: - 1 1/2 oz de malibu - azucar - jugo de limon - hierbabuena - agua mineral - jugo de pina"
+                metodo="En un vaso agregar los hielos de hierbabuena y azúcar, machacar ligeramente, agregar jugo delimón, crema de coco, jugo de piña, remover. Agregar hielos, agregar ron y finalizar con agua mineral "
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Hollywood de Noche"
+                ingredientes="Ingredientes: - 1 1/2 oz de malibu - 1 dash de midori - 3 oz de jugo de pina - 1 dash de ron - agua mineral "
+                metodo="En un vaso con hielos agregar ron malibu, ron jugo de piña(bastante cantidad) agua mineral y finalizar con dash de granadina "
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Purple Sky"
+                ingredientes="Ingredientes: - 1 oz jugo de naranja - 1 oz de jugo de pina - 1 oz de ron - 1 oz de ron de coco - 1 oz de curacao "
+                metodo="Granadina junto con hielos. En un vaso con hielo verter todos los ingredientes finalizando con dash de granadina (se puede hacer a punto frozen)"
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Rosa"
+                ingredientes="Ingredientes: - Hielo - 2 oz de ron - Granadina - 1 oz de crema de coco - Leche clavel - Jugo de pina"
+                metodo="En shaker o coctelera agitar crema de coco, clavel, ron, jugo de piña. Verter en un vaso con hielo y agregar dash de granadina "
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Luces de Habana"
+                ingredientes="Ingredientes: - 1 1/2 oz de ron de coco - Jugo de naranja - Jugo de pina - Midori"
+                metodo="En un vaso con hielo agregar ron cantidades iguales de jugo de naranja y piña finalizar con midori"
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
+    <div class="grid-1">
+        <div class="bebida">
+            <Bebida
+                tituloBebida="Spare Time"
+                ingredientes="Ingredientes: - 1  oz de ron - 1 oz de Malibu - 1/2 oz de curacao - Jugo de pina"
+                metodo="En un vaso con hielo agregar ron, ron malibu, rellenar con jugo de piña y agregar dash de curacao "
+            />
+        </div>
+        <div class="imagen-coctel">
+            <img src={botellaRon.src} alt="botella" />
+        </div>
+    </div>
+
     <div class="imagen-cocteles">
-        <img src="/src/pages/Imagen1.jpg">
+        <img src="/src/pages/Imagen1.jpg" />
     </div>
 </div>
 <style>
-    .imagen-cocteles{
+    .grid-1 {
+        margin: 2em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .bebida {
+        grid-area: 1 / 1 / 2 / 3;
+        padding: 1em;
+        margin: 1.5em;
+    }
+    .imagen-coctel {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .imagen-coctel img {
+        width: 12em;
+        height: 20em;
+        margin: 2.5em;
+        border-radius: 10px;
+    }
+    .imagen-cocteles {
         text-align: center;
     }
-    img{
-        border-radius: 1em; 
-        }
+    img {
+        border-radius: 1em;
+    }
 </style>

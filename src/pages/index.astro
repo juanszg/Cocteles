@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Ron from './Ron.astro';
-
+import { Image } from 'astro:assets';
+import botellaRon from '../images/Appleton_Estate.jpg';
 ---
 
 <Layout title="Cocteles">
@@ -19,13 +20,14 @@ import Ron from './Ron.astro';
 				title="Ron"
 				body="Encontraras 11 cocteles de Ron"
 			/>
+			<!-- <Image src={botellaRon} alt="botella" /> -->
 			<Card
 				href="/Vodka"
 				title="Vodka"
 				body="Encontraras 21 cocteles de Vodka"
 			/>
 			<Card
-				href=""
+				href="/Tequila"
 				title="Tequila"
 				body="Encontraras 12 cocteles de Tequila."
 			/>

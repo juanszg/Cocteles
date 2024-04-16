@@ -19,6 +19,9 @@ interface Props {
 const {href,title,body,bebida1,bebida2,bebida3,bebida4,bebida5,bebida6,bebida7,bebida8,bebida9,bebida10,bebida11,} = Astro.props;
 import botella from "../pages/Appleton_Estate.jpg";
 ---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Emblema+One&family=Honk&family=Jersey+10&family=Kosugi+Maru&family=Moul&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap" rel="stylesheet">
 
 <li class="link-card">
 	<a href={href}>
@@ -98,7 +101,8 @@ import botella from "../pages/Appleton_Estate.jpg";
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		/*color: rgb(120, 240, 244);*/
 		color: rgb(105, 253, 167);
-		font-family: 'Rubik 80s Fade';
+		/*font-family: 'Rubik 80s Fade';*/
+		font-family: emblema one;
 		text-shadow: 4px 4px 1px rgb(0, 0, 0);
 	}
 	p {
@@ -106,8 +110,11 @@ import botella from "../pages/Appleton_Estate.jpg";
 		font-weight: light;
 		margin-top: 0.5rem;
 		margin-bottom: 0;
-		font-family: consolas;
+		/*font-family: gabarito;*/
+		/*font-family: 'jersey 10';*/
+		font-family: suez one;
 		font-size: 18px;
+		text-shadow: 3px 4px 1px rgb(0, 0, 0);
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;

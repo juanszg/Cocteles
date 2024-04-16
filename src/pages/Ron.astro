@@ -2,253 +2,268 @@
 import Bebida from "../components/Bebidas.astro";
 import { Image } from "astro:assets";
 import botellaRon from "../images/Appleton_Estate.jpg";
+import fresa from "../images/ron/fresa.jpg";
+import pina from "../images/ron/Piña-colada.jpg";
+import fresaColada from "../images/ron/fresa-colada.jpg";
+import beach from "../images/ron/beach.jpg";
+import mojito from "../images/ron/mojito.jpg";
+import mojitoCoco from "../images/ron/mojito-coco.jpg";
+import Hollywood from "../images/ron/hollywood.jpg";
+import purple from "../images/ron/purple sky.jpg";
+
 ---
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <html lang="es">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Jersey+10&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
-        rel="stylesheet"
-    />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </html>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-    <h1>RON</h1>
-    <!--<Bebida 
+    <body>
+        <h1>RON</h1>
+        <!--<Bebida 
      tituloBebida='La Fresa'
      ingredientes='Ingredientes:1oz de ron. Licor de naranja (curacao).Pure de fresa'
      metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir "
      /> -->
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="La Fresa"
-                ingredientes="Ingredientes:- 1oz de ron- Licor de naranja (curacao)- Pure de fresa"
-                metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir."
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="La Fresa"
+                    ingredientes="Ingredientes:- 1oz de ron- Licor de naranja (curacao)- Pure de fresa"
+                    metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir."
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={fresa.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Piña Colada"
+                    ingredientes="Ingredientes: - 1oz de ron  - Jugo de Piña - Hielos - Lechera - Crema de Coco"
+                    metodo="Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu )Se puede agregar canela y decorar con popotes "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={pina.src} alt="botella" />
+            </div>
         </div>
-    </div>
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Piña Colada"
-                ingredientes="Ingredientes: - 1oz de ron  - Jugo de Piña - Hielos - Lechera - Crema de Coco"
-                metodo="Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu )Se puede agregar canela y decorar con popotes "
-            />
-        </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
-    <!--<Bebida 
+        <!--<Bebida 
     tituloBebida='Fresa Colada'
     ingredientes='Ingredientes: 1oz de ron. Fresa. Lechera. Leche clavel. Crema de coco. Hielo'
     metodo='Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu) Se puede decorar con fresas partidas y un popote'
     /> -->
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Fresa Colada"
-                ingredientes="Ingredientes - 1oz de rón - Fresa - Lechera - Leche clavel - Crema de coco - Hielo"
-                metodo="Licuar todos los ingredientes a punto de nieve (pueden agregar malibu)Se puede decorar con fresas partidas y un popote"
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Fresa Colada"
+                    ingredientes="Ingredientes - 1oz de rón - Fresa - Lechera - Leche clavel - Crema de coco - Hielo"
+                    metodo="Licuar todos los ingredientes a punto de nieve (pueden agregar malibu)Se puede decorar con fresas partidas y un popote"
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={fresaColada.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Beso Playero"
-                ingredientes="Ingredientes:"
-                ingredientes="2oz de malibu - Jarabe natural - Jugo de limón - Jugo de piña - Dash de granadina."
-                metodo="En coctelera o shaker, agitar malibu, jugo de limón. Jugo de piña, jarabe natural. y finalizar con dash de granadina "
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Beso Playero"
+                    ingredientes="Ingredientes:"
+                    ingredientes="2oz de malibu - Jarabe natural - Jugo de limón - Jugo de piña - Dash de granadina."
+                    metodo="En coctelera o shaker, agitar malibu, jugo de limón. Jugo de piña, jarabe natural. y finalizar con dash de granadina "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={beach.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Mojito"
-                ingredientes="Ingredientes: - 1oz de ron - 1 1/2 cucharada de azucar - 1/"
-                metodo="En un vaso agregar las hojas de hierbabuena y azúcar machacar ligeramente agregar jugo de limón posteriormente hielos, ron y rellenar con agua mineral ( se puede agregar jarabe natural )"
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Mojito"
+                    ingredientes="Ingredientes: - 1oz de ron - 1 1/2 cucharada de azucar - 1/"
+                    metodo="En un vaso agregar las hojas de hierbabuena y azúcar machacar ligeramente agregar jugo de limón posteriormente hielos, ron y rellenar con agua mineral ( se puede agregar jarabe natural )"
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={mojito.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Mojito de Coco"
-                ingredientes="Ingredientes: - 1 1/2 oz de malibu - azucar - jugo de limón - hierbabuena - agua mineral - jugo de piña"
-                metodo="En un vaso agregar los hielos de hierbabuena y azúcar, machacar ligeramente, agregar jugo de limón, crema de coco, jugo de piña, remover. Agregar hielos, agregar rón y finalizar con agua mineral "
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Mojito de Coco"
+                    ingredientes="Ingredientes: - 1 1/2 oz de malibu - azucar - jugo de limón - hierbabuena - agua mineral - jugo de piña"
+                    metodo="En un vaso agregar los hielos de hierbabuena y azúcar, machacar ligeramente, agregar jugo de limón, crema de coco, jugo de piña, remover. Agregar hielos, agregar rón y finalizar con agua mineral "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={mojitoCoco.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Hollywood de Noche"
-                ingredientes="Ingredientes: - 1 1/2 oz de malibu - 1 dash de midori - 3 oz de jugo de pina - 1 dash de ron - agua mineral "
-                metodo="En un vaso con hielos agregar ron malibu, ron jugo de piña ( bastante cantidad ) agua mineral y finalizar con dash de granadina "
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Hollywood de Noche"
+                    ingredientes="Ingredientes: - 1 1/2 oz de malibu - 1 dash de midori - 3 oz de jugo de pina - 1 dash de ron - agua mineral "
+                    metodo="En un vaso con hielos agregar ron malibu, ron jugo de piña ( bastante cantidad ) agua mineral y finalizar con dash de granadina "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={Hollywood.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Purple Sky"
-                ingredientes="Ingredientes: - 1 oz jugo de naranja - 1 oz de jugo de pina - 1 oz de ron - 1 oz de ron de coco - 1 oz de curacao "
-                metodo="Granadina junto con hielos. En un vaso con hielo verter todos los ingredientes finalizando con dash de granadina (se puede hacer a punto frozen)"
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Purple Sky"
+                    ingredientes="Ingredientes: - 1 oz jugo de naranja - 1 oz de jugo de pina - 1 oz de ron - 1 oz de ron de coco - 1 oz de curacao "
+                    metodo="Granadina junto con hielos. En un vaso con hielo verter todos los ingredientes finalizando con dash de granadina (se puede hacer a punto frozen)"
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={purple.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Rosa"
-                ingredientes="Ingredientes: - Hielo - 2 oz de ron - Granadina - 1 oz de crema de coco - Leche clavel - Jugo de pina"
-                metodo="En shaker o coctelera agitar crema de coco, clavel, ron, jugo de piña. Verter en un vaso con hielo y agregar dash de granadina "
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Rosa"
+                    ingredientes="Ingredientes: - Hielo - 2 oz de ron - Granadina - 1 oz de crema de coco - Leche clavel - Jugo de pina"
+                    metodo="En shaker o coctelera agitar crema de coco, clavel, ron, jugo de piña. Verter en un vaso con hielo y agregar dash de granadina "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Luces de Habana"
-                ingredientes="Ingredientes: - 1 1/2 oz de ron de coco - Jugo de naranja - Jugo de pina - Midori"
-                metodo="En un vaso con hielo agregar ron cantidades iguales de jugo de naranja y piña finalizar con midori"
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Luces de Habana"
+                    ingredientes="Ingredientes: - 1 1/2 oz de ron de coco - Jugo de naranja - Jugo de pina - Midori"
+                    metodo="En un vaso con hielo agregar ron cantidades iguales de jugo de naranja y piña finalizar con midori"
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Spare Time"
-                ingredientes="Ingredientes: - 1  oz de ron - 1 oz de Malibu - 1/2 oz de curacao - Jugo de pina"
-                metodo="En un vaso con hielo agregar ron, ron malibu, rellenar con jugo de piña y agregar dash de curacao "
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Spare Time"
+                    ingredientes="Ingredientes: - 1  oz de ron - 1 oz de Malibu - 1/2 oz de curacao - Jugo de pina"
+                    metodo="En un vaso con hielo agregar ron, ron malibu, rellenar con jugo de piña y agregar dash de curacao "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="imagen-cocteles">
-        <img src="/src/pages/Imagen1.jpg" />
-    </div>
-</body>
-<style>
-    body {
-        font-family: gabarito;
-    }
-    h1 {
-        text-align: center;
-        font-size: 4em;
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 1px rgb(4, 57, 131);
-    }
-    .grid-1 {
-        margin: 2em;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-    .bebida {
-        grid-area: 1 / 1 / 2 / 3;
-        padding: 1em;
-        margin: 1.5em;
-    }
-    .imagen-coctel {
-        grid-area: 1 / 3 / 2 / 4;
-    }
-    .imagen-coctel img {
-        width: 12em;
-        height: 20em;
-        margin: 2.5em;
-        border-radius: 10px;
-    }
-    .imagen-cocteles {
-        text-align: center;
-    }
-    img {
-        border-radius: 1em;
-    }
-    @media (max-width: 800px) {
-        .imagen-coctel img {
-            width: 11em;
-            height: 19em;
-            margin: 2.5em;
-            border-radius: 10px;
+        <div class="imagen-cocteles">
+            <img src="/src/pages/Imagen1.jpg" />
+        </div>
+    </body>
+    <style>
+        body {
+            font-family: gabarito;
+        }
+        h1 {
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            font-family: "Suez one";
+            color: rgb(255, 255, 255);
+            text-shadow: 8px 1px 1px rgb(4, 131, 65);
         }
         .grid-1 {
-            margin: 1.2em;
+            margin: 2em;
             display: grid;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
         }
         .bebida {
-            grid-area: 1 / 1 / 2 / 2;
+            grid-area: 1 / 1 / 2 / 3;
             padding: 1em;
             margin: 1.5em;
         }
         .imagen-coctel {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+        .imagen-coctel img {
+            width: 70%;
+            height: 80%;
+            margin: 2.5em;
+            border-radius: 10px;
+        }
+        .imagen-cocteles {
             text-align: center;
-            grid-area: 2 / 1 / 3/ 2;
         }
-    }
-    @media (max-width:410px){
-        .grid-1 {
-            margin: 0px;
-            display: grid;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: 1fr;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+        img {
+            border-radius: 1em;
         }
-    }
-</style>
+        @media (max-width: 800px) {
+            .imagen-coctel img {
+                width: 18em;
+                height: 19em;
+                margin: 2.5em;
+                border-radius: 10px;
+            }
+            .grid-1 {
+                margin: 1.2em;
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+            }
+            .bebida {
+                grid-area: 1 / 1 / 2 / 2;
+                padding: 1em;
+                margin: 1.5em;
+            }
+            .imagen-coctel {
+                text-align: center;
+                grid-area: 2 / 1 / 3/ 2;
+            }
+        }
+        @media (max-width: 410px) {
+            .grid-1 {
+                margin: 0px;
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+            }
+        }
+    </style>
+</head>

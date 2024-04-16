@@ -1,30 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Ron from './Ron.astro';
-import { Image } from 'astro:assets';
-import botellaRon from '../images/Appleton_Estate.jpg';
-import espacial from '../images/bebidaEspacio.jpg';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Ron from "./Ron.astro";
+import { Image } from "astro:assets";
+import botellaRon from "../images/Appleton_Estate.jpg";
+import espacial from "../images/bebidaEspacio.jpg";
 ---
 
 <Layout title="Cocteles">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-	
-<main>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Jersey+10&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap" rel="stylesheet">
+
+	<main>
 		<h1><span class="text-gradient">COCTELES</span></h1>
 		<div class="coctelinicio">
-			<img src={espacial.src} alt="botella">	
+			<!--<img src={espacial.src} alt="botella">	 -->
 		</div>
-		  
+
 		<ul role="list" class="link-card-grid">
 			<Card
-				href='/Ron'
+				href="/Ron"
 				title="Ron"
-				body="11 Cocteles de Ron: "
-			    bebida1='- La Fresa'
-                bebida2="- Piña colada"
+				body="11 cocteles de Ron: "
+				bebida1="- La Fresa"
+				bebida2="- Piña colada"
 				bebida3="- Fresa colada"
 				bebida4="- Beso Playero"
 				bebida5="- Mojito"
@@ -32,40 +32,81 @@ import espacial from '../images/bebidaEspacio.jpg';
 				bebida7="- Hollywood de noche"
 				bebida8="- Purple Sky"
 				bebida9="- Rosa"
-				bebida10='- Luces de Habana'
-				bebida11='- Spare time'
-				/>
-			<!-- <Image src={botellaRon} alt="botella" /> -->
-			<Card
-				href="/Vodka"
-				title="Vodka"
-				body="Encontraras 21 cocteles de Vodka"
-				bebida1="osfma"
+				bebida10="- Luces de Habana"
+				bebida11="- Spare time"
 			/>
+			<!-- <Image src={botellaRon} alt="botella" /> -->
+			<div class="vodka">
+				<Card
+					href="/Vodka"
+					title="Vodka"
+					body="21 cocteles de Vodka:"
+					bebida1="- Medias de seda"
+					bebida2="- Panchecito"
+					bebida3="- Malibu Sunrise"
+					bebida4="- Espia Ruso"
+					bebida11="- Mula Moscovita y mas..."
+					bebida6="- Poseidon"
+					bebida7="- Sex on the beach"
+					bebida8="- Sangria"
+					bebida9="- Molotov"
+					bebida10="- Go Berry"
+					bebida5="- Conga"
+				/>
+			</div>
 			<Card
 				href="/Tequila"
 				title="Tequila"
-				body="Encontraras 12 cocteles de Tequila."
-				bebida1="asda"
+				body="12 cocteles de Tequila:"
+				bebida1="- Toro Bravo"
+				bebida2="- Tequila Sunrise"
+				bebida3="- Margarita"
+				bebida4="- Blue Margarita"
+				bebida5="- Paloma"
+				bebida6="- Tequila Sunrise (Hierbabuena)"
+				bebida7="- Iguana green"
+				bebida8="- TNT"
+				bebida9="- Malinche"
+				bebida10="- Rosa Mexicana"
+				bebida11="- Abuela"
 			/>
 			<Card
 				href=""
 				title="Whiskey"
-				body="Encontraras 10 cocteles de Ginebra"
-				bebida1="asdad"
+				body=""
+				bebida1=""
+				bebida2=""
+				bebida3=""
+				bebida4=""
+				bebida5=""
+				bebida6=""
+				bebida7=""
+				bebida8=""
+				bebida9=""
+				bebida10=""
+				bebida11=""
 			/>
 			<Card
 				href=""
 				title="Ginebra"
-				body="Encontraras 5 cocteles de Ginebra"
-				bebida1="sdsd"
+				body="5 cocteles de Ginebra:"
+				bebida1="- Abbey"
+				bebida2="- Hula Hula Coctel"
+				bebida3="- Flora Cooler"
+				bebida4="- Lady Maria"
+				bebida5="- Gin Today"
+				bebida6=""
+				bebida7=""
+				bebida8=""
+				bebida9=""
+				bebida10=""
+				bebida11=""
 			/>
 		</ul>
-</main>
+	</main>
 </Layout>
 
 <style>
-
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -86,18 +127,30 @@ import espacial from '../images/bebidaEspacio.jpg';
 		z-index: -1;
 	}
 	h1 {
-		font-size: 3.5rem;
+		font-size: 95px;
 		font-weight: 900;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
 		font-weight: 900;
-		font-family: gabarito;
+		font-family: 'Rubik 80s Fade';
 		/*color: rgb(4, 57, 131);*/
 		/*color: rgb(35, 250, 175);*/
-		color: rgb(255, 255, 255);
-		text-shadow: 4px 0px 1px rgb(1, 202, 102);
-s
+		
+		/*color: rgb(255, 255, 255);
+		text-shadow: 4px 0px 1px rgb(1, 202, 102);*/
+		color: rgb(211, 211, 207);
+		text-shadow: 5px 0px 1px rgb(0, 146, 63);
+	}
+	@media (max-width: 720px) {
+		h1 {
+			font-size: 60px;
+		}
+	}
+	@media (max-width: 520px) {
+		h1 {
+			font-size: 40px;
+		}
 	}
 	/*.text-gradient {
 		background-image: var(--accent-gradient);
@@ -106,35 +159,17 @@ s
 		background-size: 400%;
 		background-position: 0%;
 	}*/
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions srong {
-		color: rgb(var(--accent-light));
-	}
+	
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
 	}
-	.coctelinicio{
+	.coctelinicio {
 		text-align: center;
-
 	}
-	.coctelinicio img{
+	.coctelinicio img {
 		width: 45%;
 		height: 45%;
 		border-radius: 1em;

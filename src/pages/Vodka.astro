@@ -3,203 +3,210 @@ import Bebida from "../components/Bebidas.astro";
 import botellaRon from "../images/Appleton_Estate.jpg";
 ---
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="es">
+    <meta charset="UTF-8">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+        rel="stylesheet"
+    />
 </head>
 
 <main>
-<h1>VODKA</h1>
-<div class="numero-2">
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Medias de Seda"
-                ingredientes="Ingredientes: - 2oz de Vodka - Licor de cafe - Leche clavel - Lechera - Granadina - Cereza"
-                metodo="Se licuan los ingredientes con hielo a punto frozen, se puede decorar con cerezas "
-            />
-        </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
+    <h1>VODKA</h1>
+    <div class="numero-2">
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Medias de Seda"
+                    ingredientes="Ingredientes: - 2oz de Vodka - Licor de cafe - Leche clavel - Lechera - Granadina - Cereza"
+                    metodo="Se licuan los ingredientes con hielo a punto frozen, se puede decorar con cerezas "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Panchecito"
+                    ingredientes="Ingredientes: - 1 oz de vodka - Jugo de arandano - Jugo de pina - Sprite - Granadina"
+                    metodo="..."
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
 
-        <div class="bebida-2">
-            <Bebida
-                tituloBebida="Panchecito"
-                ingredientes="Ingredientes: - 1 oz de vodka - Jugo de arandano - Jugo de pina - Sprite - Granadina"
-                metodo="..."
-            />
-        </div>
-        <div class="imagen-coctel-2">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Malibu Sunrise"
+                    ingredientes="Ingredientes: - Ron de coco - Curacao - Jugo de pina - Coco rallado"
+                    metodo="..."
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Malibu Sunrise"
-                ingredientes="Ingredientes: - Ron de coco - Curacao - Jugo de pina - Coco rallado"
-                metodo="..."
-            />
-        </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Espia Ruso"
+                    ingredientes="Ingredeintes: -  1 1/2 oz de vodka - Lechera - Baileys - Canela en polvo"
+                    metodo="..."
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
 
-        <div class="bebida-2">
-            <Bebida
-                tituloBebida="Espia Ruso"
-                ingredientes="Ingredeintes: -  1 1/2 oz de vodka - Lechera - Baileys - Canela en polvo"
-                metodo="..."
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Mula Moscovita"
+                    ingredientes="Ingredientes: - 2 1/2oz de vodka - Ginger ale"
+                    metodo="En un vaso con hielos agregar vodka y rellenar con ginger ale, revolver con cuchara "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Poseidon"
+                    ingredientes="Ingredientes: -1oz de vodka - 1oz de ron - Agua minerla - Bebida energetizante - Curacao - Cerezas - Granadina"
+                    metodo="En un vaso con hielos agregar como base el vodka y el ron, rellenar a ¾ con agua mineral luego 1 ½ oz de bebida energizante y 1 oz de curacao, y dash de granadina decorar con cereza "
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel-2">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Mula Moscovita"
-                ingredientes="Ingredientes: - 2 1/2oz de vodka - Ginger ale"
-                metodo="En un vaso con hielos agregar vodka y rellenar con ginger ale, revolver con cuchara "
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Sex On The Beach"
+                    ingredientes="Ingredientes: - 1 a 2 oz de vodka - Jugo de granadina - Granadina "
+                    metodo="En un vaso con hielos agregar de 1 a 2 oz de vodka rellenar con naranja y un dash de granadina "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Sangria"
+                    ingredientes="Ingredientes: - Jugo de limon - Jarabe natural - 1 1/2 oz de vodka - Agua mineral - Vino tinto"
+                    metodo="En el vaso agregar el vodka, rellenar con agua mineral a la mitad, agregar vino tinto aproximadamente a 3/4 , jarabe natural y jugo de limón "
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-        <div class="bebida-2">
-            <Bebida
-                tituloBebida="Poseidon"
-                ingredientes="Ingredientes: -1oz de vodka - 1oz de ron - Agua minerla - Bebida energetizante - Curacao - Cerezas - Granadina"
-                metodo="En un vaso con hielos agregar como base el vodka y el ron, rellenar a ¾ con agua mineral luego 1 ½ oz de bebida energizante y 1 oz de curacao, y dash de granadina decorar con cereza "
-            />
-        </div>
-        <div class="imagen-coctel-2">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Sex On The Beach"
-                ingredientes="Ingredientes: - 1 a 2 oz de vodka - Jugo de granadina - Granadina "
-                metodo="En un vaso con hielos agregar de 1 a 2 oz de vodka rellenar con naranja y un dash de granadina "
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Molotov"
+                    ingredientes="Ingredientes: - 2oz de vodka - Curacao - Jugo de naranja - Fresas - Ron - Jarabe natural"
+                    metodo="En un vaso con hielos agregar jarabe natural con curacao, después agregar vodka y ron rellenar con jugo de naranja y decorar con fresas"
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Go Berry"
+                    ingredientes="Ingredientes: - 1 a 2 oz de vodka - Jugo de fresa - Fresas - Jugo de naranja"
+                    metodo="..."
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-        <div class="bebida-2">
-            <Bebida
-                tituloBebida="Sangria"
-                ingredientes="Ingredientes: - Jugo de limon - Jarabe natural - 1 1/2 oz de vodka - Agua mineral - Vino tinto"
-                metodo="En el vaso agregar el vodka, rellenar con agua mineral a la mitad, agregar vino tinto aproximadamente a 3/4 , jarabe natural y jugo de limón "
-            />
-        </div>
-        <div class="imagen-coctel-2">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
 
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Molotov"
-                ingredientes="Ingredientes: - 2oz de vodka - Curacao - Jugo de naranja - Fresas - Ron - Jarabe natural"
-                metodo="En un vaso con hielos agregar jarabe natural con curacao, después agregar vodka y ron rellenar con jugo de naranja y decorar con fresas"
-            />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Conga"
+                    ingredientes="Ingredientes: - 3oz de jugo de pina - 3 oz de jugo de toronja - 3 oz de jugo de naranja - 1 toque de granadina - 2 oz de vodka - 2 oz de ron"
+                    metodo="En una copa grande agregar el ron y el vodka después rellenar con lo jugos, piña, toronja naranja y finalizar con el dash de granadina "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Rey Falso"
+                    ingredientes="Ingredientes: - Kalhua - Vodka - Baileys - Cafe"
+                    metodo="..."
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Limonada Electrica"
+                    ingredientes="Ingredientes: - Agua mineral - Jarabe natural - Jugo de limon - 2oz de vodka - Midori"
+                    metodo="En un vaso cA vodka cocktail in spaceon hielo agregar el vodka, jarabe agua mineral y terminar con dash de midori y jugo de limón "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Green Vodka"
+                    ingredientes="ingredientes: - 2oz vodka - Midori - Ralladura de limon - Jugo de limón - Jarabe natural"
+                    metodo="En un vaso con hielos agregar vodka, jarabe natural, jugo de limón y finalizar con midori y ralladura "
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
-        <div class="bebida-2">
-            <Bebida
-                tituloBebida="Go Berry"
-                ingredientes="Ingredientes: - 1 a 2 oz de vodka - Jugo de fresa - Fresas - Jugo de naranja"
-                metodo="..."
-            />
-        </div>
-        <div class="imagen-coctel-2">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
-
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Conga"
-                ingredientes="Ingredientes: - 3oz de jugo de pina - 3 oz de jugo de toronja - 3 oz de jugo de naranja - 1 toque de granadina - 2 oz de vodka - 2 oz de ron"
-                metodo="En una copa grande agregar el ron y el vodka después rellenar con lo jugos, piña, toronja naranja y finalizar con el dash de granadina "
-            />
-        </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-        <div class="bebida-2">
-            <Bebida
-                tituloBebida="Rey Falso"
-                ingredientes="Ingredientes: - Kalhua - Vodka - Baileys - Cafe"
-                metodo="..."
-            />
-        </div>
-        <div class="imagen-coctel-2">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Limonada Electrica"
-                ingredientes="Ingredientes: - Agua mineral - Jarabe natural - Jugo de limon - 2oz de vodka - Midori"
-                metodo="En un vaso con hielo agregar el vodka, jarabe agua mineral y terminar con dash de midori y jugo de limón "
-            />
-        </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-        <div class="bebida-2">
-            <Bebida
-                tituloBebida="Green Vodka"
-                ingredientes="ingredientes: - 2oz vodka - Midori - Ralladura de limon - Jugo de limon - Jarabe natural"
-                metodo="En un vaso con hielos agregar vodka, jarabe natural, jugo de limón y finalizar con midori y ralladura "
-            />
-        </div>
-        <div class="imagen-coctel-2">
-            <img src={botellaRon.src} alt="botella" />
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Camino Al Cielo"
+                    ingredientes="Ingredeintes: - Piña colada - Curacao - Vodka - Granadia - Platano - Jugo de limón"
+                    metodo="Licuar los ingredientes y al finalizar en un vaso relleno de hielo vertir y echar un dash de granadina y jugo de limón "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
         </div>
     </div>
-    <div class="grid-1">
-        <div class="bebida">
-            <Bebida
-                tituloBebida="Camino Al Cielo"
-                ingredientes="Ingredeintes: - Pina colada - Curacao - Vodka - Granadia - Platano - Jugo de limon"
-                metodo="Licuar los ingredientes y al finalizar en un vaso relleno de hielo vertir y echar un dash de granadina y jugo de limón "
-            />
-        </div>
-        <div class="imagen-coctel">
-            <img src={botellaRon.src} alt="botella" />
-        </div>
-    </div>
-</div>
 </main>
 <style>
-    main{
+    main {
         font-family: gabarito;
     }
     h1 {
-            text-align: center;
-            font-size: 4em;
-            font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(255, 255, 255);            
-            text-shadow: 2px 2px 1px rgb(4, 57, 131);
-        }
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 1px rgb(4, 57, 131);
+    }
     .grid-1 {
         margin: 2em;
         display: grid;
@@ -264,7 +271,7 @@ import botellaRon from "../images/Appleton_Estate.jpg";
             padding: 1em;
             margin: 1.5em;
         }
-        .bebida-2{
+        .bebida-2 {
             grid-area: 3 / 1 / 4 / 2;
             padding: 1em;
             margin: 1.5em;
@@ -273,12 +280,12 @@ import botellaRon from "../images/Appleton_Estate.jpg";
             text-align: center;
             grid-area: 2/ 1 / 3 / 2;
         }
-        .imagen-coctel-2{
+        .imagen-coctel-2 {
             text-align: center;
             grid-area: 4 / 1 / 5 / 2;
         }
     }
-    @media (max-width:410px){
+    @media (max-width: 410px) {
         .grid-1 {
             margin: 0px;
             display: grid;

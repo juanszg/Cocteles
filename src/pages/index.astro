@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 import Ron from './Ron.astro';
 import { Image } from 'astro:assets';
 import botellaRon from '../images/Appleton_Estate.jpg';
+import espacial from '../images/bebidaEspacio.jpg';
 ---
 
 <Layout title="Cocteles">
@@ -13,33 +14,51 @@ import botellaRon from '../images/Appleton_Estate.jpg';
 	
 <main>
 		<h1><span class="text-gradient">COCTELES</span></h1>
-	
+		<div class="coctelinicio">
+			<img src={espacial.src} alt="botella">	
+		</div>
+		  
 		<ul role="list" class="link-card-grid">
 			<Card
 				href='/Ron'
 				title="Ron"
-				body="Encontraras 11 cocteles de Ron"
-			/>
+				body="11 Cocteles de Ron: "
+			    bebida1='- La Fresa'
+                bebida2="- Piña colada"
+				bebida3="- Fresa colada"
+				bebida4="- Beso Playero"
+				bebida5="- Mojito"
+				bebida6="- Mojito de Coco"
+				bebida7="- Hollywood de noche"
+				bebida8="- Purple Sky"
+				bebida9="- Rosa"
+				bebida10='- Luces de Habana'
+				bebida11='- Spare time'
+				/>
 			<!-- <Image src={botellaRon} alt="botella" /> -->
 			<Card
 				href="/Vodka"
 				title="Vodka"
 				body="Encontraras 21 cocteles de Vodka"
+				bebida1="osfma"
 			/>
 			<Card
 				href="/Tequila"
 				title="Tequila"
 				body="Encontraras 12 cocteles de Tequila."
+				bebida1="asda"
 			/>
 			<Card
 				href=""
 				title="Whiskey"
 				body="Encontraras 10 cocteles de Ginebra"
+				bebida1="asdad"
 			/>
 			<Card
 				href=""
 				title="Ginebra"
 				body="Encontraras 5 cocteles de Ginebra"
+				bebida1="sdsd"
 			/>
 		</ul>
 </main>
@@ -67,21 +86,26 @@ import botellaRon from '../images/Appleton_Estate.jpg';
 		z-index: -1;
 	}
 	h1 {
-		font-size: 3rem;
-		font-weight: 700;
+		font-size: 3.5rem;
+		font-weight: 900;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
 		font-weight: 900;
-
+		font-family: gabarito;
+		/*color: rgb(4, 57, 131);*/
+		/*color: rgb(35, 250, 175);*/
+		color: rgb(255, 255, 255);
+		text-shadow: 4px 0px 1px rgb(1, 202, 102);
+s
 	}
-	.text-gradient {
+	/*.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
+	}*/
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
@@ -105,5 +129,14 @@ import botellaRon from '../images/Appleton_Estate.jpg';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+	.coctelinicio{
+		text-align: center;
+
+	}
+	.coctelinicio img{
+		width: 45%;
+		height: 45%;
+		border-radius: 1em;
 	}
 </style>

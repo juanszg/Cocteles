@@ -3,26 +3,59 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
+	bebida1: string;
+	bebida2: string;
+	bebida3: string;
+	bebida4: string;
+	bebida5: string;
+	bebida6: string;
+	bebida7: string;
+	bebida8: string;
+	bebida9: string;
+	bebida10: string;
+	bebida11: string;
 }
 
-const { href, title, body } = Astro.props;
-import botella from '../pages/Appleton_Estate.jpg';
+const {href,title,body,bebida1,bebida2,bebida3,bebida4,bebida5,bebida6,bebida7,bebida8,bebida9,bebida10,bebida11,} = Astro.props;
+import botella from "../pages/Appleton_Estate.jpg";
 ---
 
 <li class="link-card">
 	<a href={href}>
 		<h2>
 			{title}
-			<!--<span>&rarr;</span> --> <!-- Es la flecha -->
+			<!--<span>&rarr;</span> -->
+			<!-- Es la flecha -->
 		</h2>
 		<p>
 			{body}
 		</p>
+		<div class="general">
+			<div class="grid-1">
+				<p>
+					{bebida1}<br />
+					{bebida2}<br />
+					{bebida3}<br />
+					{bebida4}<br />
+					{bebida5}<br />
+					{bebida6}<br />
+				</p>
+			</div>
+			<div class="grid-2">
+				<p>
+					{bebida7}<br />
+					{bebida8}<br />
+					{bebida9}<br />
+					{bebida10}<br/ >
+					{bebida11}
+				</p>
+			</div>
+		</div>
 		<!-- <img src={botella} /> -->
 	</a>
 </li>
 <style>
-	.link-card {
+	/*.link-card {
 		list-style: none;
 		display: flex;
 		padding: 1px;
@@ -33,6 +66,20 @@ import botella from '../pages/Appleton_Estate.jpg';
 		background-position: 100%;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+	}
+	*/
+	.link-card {
+		list-style: none;
+		display: flex;
+		padding: 0.2em;
+		background-color: #3bb099;
+		background-image: none;
+		background-size: 400%;
+		border-radius: 10px;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		box-shadow: inset 0 0 0 1px rgba(4, 234, 88, 0.1);
+		height: 20em;
 	}
 	.link-card > a {
 		width: 100%;
@@ -52,15 +99,32 @@ import botella from '../pages/Appleton_Estate.jpg';
 		color: rgb(120, 240, 244);
 	}
 	p {
+		text-align: center;
+		font-weight: light;
 		margin-top: 0.5rem;
 		margin-bottom: 0;
-		font-family: gabarito;
+		font-family: consolas;
+		font-size: 1em;
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
-		background-image: var(--accent-gradient);
+		background-color: rgb(138, 239, 187);
 	}
 	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
+		/*color: rgb(var(--accent-light));*/
+		color: rgb(7, 251, 129);
+	}
+	.general {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	.grid-1 {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+	.grid-2 {
+		grid-area: 1 / 2 / 2 / 3;
 	}
 </style>

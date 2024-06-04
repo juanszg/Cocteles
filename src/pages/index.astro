@@ -8,101 +8,30 @@ import espacial from "../images/bebidaEspacio.jpg";
 ---
 
 <Layout title="Cocteles">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Emblema+One&family=Honk&family=Jersey+10&family=Kosugi+Maru&family=Moul&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Emblema+One&family=Honk&family=Jersey+10&family=Kosugi+Maru&family=Moul&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap"
+		rel="stylesheet"
+	/>
 
 	<main>
 		<h1><span class="text-gradient">COCTELES</span></h1>
 		<div class="coctelinicio">
 			<!--<img src={espacial.src} alt="botella">	 -->
 		</div>
-
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/Ron"
-				title="Ron"
-				body="11 cocteles de Ron: "
-				bebida1="- La Fresa"
-				bebida2="- Piña colada"
-				bebida3="- Fresa colada"
-				bebida4="- Beso Playero"
-				bebida5="- Mojito"
-				bebida6="- Mojito de Coco"
-				bebida7="- Hollywood de noche"
-				bebida8="- Purple Sky"
-				bebida9="- Rosa"
-				bebida10="- Luces de Habana"
-				bebida11="- Spare time"
-			/>
-			<!-- <Image src={botellaRon} alt="botella" /> -->
-			<div class="vodka">
-				<Card
-					href="/Vodka"
-					title="Vodka"
-					body="21 cocteles de Vodka:"
-					bebida1="- Medias de seda"
-					bebida2="- Panchecito"
-					bebida3="- Malibu Sunrise"
-					bebida4="- Espia Ruso"
-					bebida11="- Mula Moscovita y mas..."
-					bebida6="- Poseidon"
-					bebida7="- Sex on the beach"
-					bebida8="- Sangria"
-					bebida9="- Molotov"
-					bebida10="- Go Berry"
-					bebida5="- Conga"
-				/>
-			</div>
-			<Card
-				href="/Tequila"
-				title="Tequila"
-				body="12 cocteles de Tequila:"
-				bebida1="- Toro Bravo"
-				bebida2="- Tequila Sunrise"
-				bebida3="- Margarita"
-				bebida4="- Blue Margarita"
-				bebida5="- Paloma"
-				bebida6="- Tequila Sunrise (Hierbabuena)"
-				bebida7="- Iguana green"
-				bebida8="- TNT"
-				bebida9="- Malinche"
-				bebida10="- Rosa Mexicana"
-				bebida11="- Abuela"
-			/>
-			<Card
-				href=""
-				title="Whiskey"
-				body=""
-				bebida1=""
-				bebida2=""
-				bebida3=""
-				bebida4=""
-				bebida5=""
-				bebida6=""
-				bebida7=""
-				bebida8=""
-				bebida9=""
-				bebida10=""
-				bebida11=""
-			/>
-			<Card
-				href=""
-				title="Ginebra"
-				body="5 cocteles de Ginebra:"
-				bebida1="- Abbey"
-				bebida2="- Hula Hula Coctel"
-				bebida3="- Flora Cooler"
-				bebida4="- Lady Maria"
-				bebida5="- Gin Today"
-				bebida6=""
-				bebida7=""
-				bebida8=""
-				bebida9=""
-				bebida10=""
-				bebida11=""
-			/>
-		</ul>
+		<div class="grid-cartas">
+			<ul role="list" class="link-card-grid">
+				<Card href="/Ron" title="Ron" body="" />
+				<!-- <Image src={botellaRon} alt="botella" /> -->
+				<div class="vodka">
+					<Card href="/Vodka" title="Vodka" body="" />
+				</div>
+				<Card href="/Tequila" title="Tequila" body="" />
+				<Card href="" title="Whiskey" body="" />
+				<Card href="" title="Ginebra" body="" />
+			</ul>
+		</div>
 	</main>
 </Layout>
 
@@ -116,6 +45,16 @@ import espacial from "../images/bebidaEspacio.jpg";
 		font-size: 20px;
 		line-height: 1.6;
 		font-family: gabarito;
+	}
+	body{
+		background-image: url('../pages/img/patron2max.png');
+		background-size: cover;
+		background-position: center;
+	}
+	.grid-cartas{
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: 2fr;
+		grid-gap: 0px;
 	}
 	.astro-a {
 		position: absolute;
@@ -133,14 +72,15 @@ import espacial from "../images/bebidaEspacio.jpg";
 		text-align: center;
 		margin-bottom: 1em;
 		font-weight: 900;
-		font-family: 'moul';
+		font-family: "emblema one";
 		/*color: rgb(4, 57, 131);*/
 		/*color: rgb(35, 250, 175);*/
-		
+
 		/*color: rgb(255, 255, 255);
 		text-shadow: 4px 0px 1px rgb(1, 202, 102);*/
 		color: rgb(255, 255, 255);
-		text-shadow: 5px 0px 1px rgb(0, 146, 63);
+		/*text-shadow: 5px 0px 1px rgb(0, 146, 63);*/
+		text-shadow: 5px 0px 1px rgb(2, 0, 146);
 	}
 	@media (max-width: 720px) {
 		h1 {
@@ -159,7 +99,7 @@ import espacial from "../images/bebidaEspacio.jpg";
 		background-size: 400%;
 		background-position: 0%;
 	}*/
-	
+
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));

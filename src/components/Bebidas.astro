@@ -3,18 +3,20 @@ import type { ImageFunction } from 'astro:content';
 
 interface Props {
     tituloBebida: string;
+    dificultad:string;
     ingredientes: string;
     metodo: string;
     /*imagen:any;
     coctel: string;*/
 }
-const { tituloBebida, ingredientes, metodo} = Astro.props;
+const { tituloBebida,dificultad, ingredientes, metodo} = Astro.props;
 ---
 
 <div class="grid-1">
     <div class="cocteles">
         <h1 class="titulos">{tituloBebida}</h1>
         <hr /><br>
+        <h4 class="dificultdad">{dificultad}</h4>
         <h3 class="ingredientes">
             {ingredientes}
         </h3>

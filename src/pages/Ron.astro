@@ -1,5 +1,6 @@
 ---
 import Bebida from "../components/Bebidas.astro";
+import Header from "../components/Header.astro";
 import { Image } from "astro:assets";
 import botellaRon from "../images/Appleton_Estate.jpg";
 import fresa from "../images/ron/fresa.jpg";
@@ -10,7 +11,7 @@ import mojito from "../images/ron/mojito.jpg";
 import mojitoCoco from "../images/ron/mojito-coco.jpg";
 import Hollywood from "../images/ron/hollywood.jpg";
 import purple from "../images/ron/purple sky.jpg";
-
+import Estrella from "../components/niveles.png";
 ---
 
 <head>
@@ -33,6 +34,10 @@ import purple from "../images/ron/purple sky.jpg";
     </html>
 
     <body>
+        <div class="header">
+            <Header />
+        </div>
+
         <h1>RON</h1>
         <!--<Bebida 
      tituloBebida='La Fresa'
@@ -43,6 +48,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="La Fresa"
+                    dificultad="Dificultad: ⭐⭐⭐"  
                     ingredientes="Ingredientes:- 1oz de ron- Licor de naranja (curacao)- Pure de fresa"
                     metodo="Preparacion: Agregar los el escarchado de hielo a tope en un vaso largo, vertir la onza de ron, posteriormente 1 onza y media del licor de naranja y por ultimo el pure de fresa. Licuar y servir."
                 />
@@ -55,6 +61,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Piña Colada"
+                    dificultad="Dificultad: ⭐⭐"
                     ingredientes="Ingredientes: - 1oz de ron  - Jugo de Piña - Hielos - Lechera - Crema de Coco"
                     metodo="Licuar todos los ingredientes a punto de nieve ( pueden agregar malibu )Se puede agregar canela y decorar con popotes "
                 />
@@ -72,6 +79,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Fresa Colada"
+                    dificultad="Dificultad: ⭐⭐⭐"
                     ingredientes="Ingredientes - 1oz de rón - Fresa - Lechera - Leche clavel - Crema de coco - Hielo"
                     metodo="Licuar todos los ingredientes a punto de nieve (pueden agregar malibu)Se puede decorar con fresas partidas y un popote"
                 />
@@ -85,6 +93,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Beso Playero"
+                    dificultad="Dificultad: ⭐⭐⭐"
                     ingredientes="Ingredientes:"
                     ingredientes="2oz de malibu - Jarabe natural - Jugo de limón - Jugo de piña - Dash de granadina."
                     metodo="En coctelera o shaker, agitar malibu, jugo de limón. Jugo de piña, jarabe natural. y finalizar con dash de granadina "
@@ -99,6 +108,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Mojito"
+                    dificultad="Dificultad: ⭐⭐"
                     ingredientes="Ingredientes: - 1oz de ron - 1 1/2 cucharada de azucar - 1/"
                     metodo="En un vaso agregar las hojas de hierbabuena y azúcar machacar ligeramente agregar jugo de limón posteriormente hielos, ron y rellenar con agua mineral ( se puede agregar jarabe natural )"
                 />
@@ -112,6 +122,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Mojito de Coco"
+                    dificultad="Dificultad: ⭐⭐"
                     ingredientes="Ingredientes: - 1 1/2 oz de malibu - azucar - jugo de limón - hierbabuena - agua mineral - jugo de piña"
                     metodo="En un vaso agregar los hielos de hierbabuena y azúcar, machacar ligeramente, agregar jugo de limón, crema de coco, jugo de piña, remover. Agregar hielos, agregar rón y finalizar con agua mineral "
                 />
@@ -125,6 +136,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Hollywood de Noche"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
                     ingredientes="Ingredientes: - 1 1/2 oz de malibu - 1 dash de midori - 3 oz de jugo de pina - 1 dash de ron - agua mineral "
                     metodo="En un vaso con hielos agregar ron malibu, ron jugo de piña ( bastante cantidad ) agua mineral y finalizar con dash de granadina "
                 />
@@ -138,6 +150,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Purple Sky"
+                    dificultad="Dificultad: ⭐⭐⭐"
                     ingredientes="Ingredientes: - 1 oz jugo de naranja - 1 oz de jugo de pina - 1 oz de ron - 1 oz de ron de coco - 1 oz de curacao "
                     metodo="Granadina junto con hielos. En un vaso con hielo verter todos los ingredientes finalizando con dash de granadina (se puede hacer a punto frozen)"
                 />
@@ -151,6 +164,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Rosa"
+                    dificultad="Dificultad: ⭐⭐⭐"
                     ingredientes="Ingredientes: - Hielo - 2 oz de ron - Granadina - 1 oz de crema de coco - Leche clavel - Jugo de pina"
                     metodo="En shaker o coctelera agitar crema de coco, clavel, ron, jugo de piña. Verter en un vaso con hielo y agregar dash de granadina "
                 />
@@ -164,6 +178,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Luces de Habana"
+                    dificultad="Dificultad: ⭐⭐⭐"
                     ingredientes="Ingredientes: - 1 1/2 oz de ron de coco - Jugo de naranja - Jugo de pina - Midori"
                     metodo="En un vaso con hielo agregar ron cantidades iguales de jugo de naranja y piña finalizar con midori"
                 />
@@ -177,6 +192,7 @@ import purple from "../images/ron/purple sky.jpg";
             <div class="bebida">
                 <Bebida
                     tituloBebida="Spare Time"
+                    dificultad="Dificultad: ⭐⭐⭐"
                     ingredientes="Ingredientes: - 1  oz de ron - 1 oz de Malibu - 1/2 oz de curacao - Jugo de pina"
                     metodo="En un vaso con hielo agregar ron, ron malibu, rellenar con jugo de piña y agregar dash de curacao "
                 />
@@ -191,18 +207,28 @@ import purple from "../images/ron/purple sky.jpg";
         </div>
     </body>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         body {
             font-family: gabarito;
+            margin: 0px;
+            padding: 0px;
+            /*background-color: rgb(0, 80, 53);*/
+            background-color: rgb(0, 99, 68);
+            background-image: url("../components/ruidoBackground.png");
         }
         h1 {
+            margin-top: .5em;
             text-align: center;
             font-size: 4em;
             font-weight: bold;
             font-family: "Suez one";
             font-family: "gabarito";
             color: rgb(255, 255, 255);
-           /* text-shadow: 8px 1px 1px rgb(4, 131, 65);*/
-           text-shadow: 2px 2px 2px rgb(0, 235, 235) ;
+            /* text-shadow: 8px 1px 1px rgb(4, 131, 65);*/
+            text-shadow: 2px 2px 2px rgb(0, 235, 235);
         }
         .grid-1 {
             margin: 2em;

@@ -7,13 +7,168 @@ import botellaRon from "../images/Appleton_Estate.jpg";
 import espacial from "../images/bebidaEspacio.jpg";
 ---
 
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		font-family: gabarito;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+            text-shadow: 3px 3px 1px rgb(0, 146, 63);
+            font-weight: 800;
+            transition:
+                color 0.2s ease-in-out,
+                text-shadow 0.25s ease-in-out;
+        }
+        h1 span {
+            transition:
+                color 0.2s ease-in-out,
+                text-shadow 0.25s ease-in-out;
+        }
+        .color1 {
+            color: green;
+        }
+        .color2 {
+            color: white;
+        }
+        h1 span:hover {
+            color: rgb(0, 143, 63);
+            text-shadow: 5px 0px 1px rgb(227, 227, 227);
+        }
+	/* SEGUNDA VERSION COLORES 
+	h1 {
+		font-family: "Gabarito";
+		text-shadow: 3px 3px 0px rgb(0, 0, 0);
+		display: flex;
+		position: relative;
+		left: 20%;
+		font-size: 5em;
+		font-weight: 900;
+		text-align: center;
+		
+	}
+	h1{
+		display: inline-block;
+		animation: colorChange 12s infinite;
+	}
+
+	@keyframes colorChange {
+		0% {
+			color: blue;
+		}
+		14.28% {
+			color: red;
+		}
+		28.56% {
+			color: yellow;
+		}
+		42.84% {
+			color: green;
+		}
+		57.12% {
+			color: orange;
+		}
+		71.4% {
+			color: purple;
+		}
+		85.68% {
+			color: rgb(255, 255, 255);
+		}
+		100% {
+			color: blue;
+		}
+	}
+*/
+	/*h1 {
+						font-size: 4em;
+						font-weight: 900;
+						line-height: 1;
+						text-align: center;
+						margin-bottom: 1em;
+						font-weight: 900;
+						font-family: gabarito;
+						/*font-family: 'moul';*/
+	/*color: rgb(4, 57, 131);*/
+	/*color: rgb(35, 250, 175);*/
+
+	/*color: rgb(255, 255, 255);
+						text-shadow: 4px 0px 1px rgb(1, 202, 102);
+						color: rgb(255, 255, 255);
+						text-shadow: 5px 0px 1px rgb(0, 146, 63);
+					}
+						*/
+	@media (max-width: 720px) {
+		h1 {
+			font-size: 60px;
+		}
+	}
+	@media (max-width: 520px) {
+		h1 {
+			font-size: 40px;
+		}
+	}
+	/*.text-gradient {
+						background-image: var(--accent-gradient);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-size: 400%;
+						background-position: 0%;
+					}*/
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+	.coctelinicio {
+		text-align: center;
+	}
+	.coctelinicio img {
+		width: 45%;
+		height: 45%;
+		border-radius: 1em;
+	}
+</style>
+
 <Layout title="Cocteles">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Emblema+One&family=Honk&family=Jersey+10&family=Kosugi+Maru&family=Moul&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Emblema+One&family=Honk&family=Jersey+10&family=Kosugi+Maru&family=Moul&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap"
+		rel="stylesheet"
+	/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet"
+	/>
+	<title>Animated Title</title>
 
 	<main>
-		<h1><span class="text-gradient">COCTELES</span></h1>
+		<!-- <h1><span class="text-gradient">COCTELES</span></h1>-->
+		<h1 id="cocteles">COCTELES</h1>
 		<div class="coctelinicio">
 			<!--<img src={espacial.src} alt="botella">	 -->
 		</div>
@@ -105,74 +260,4 @@ import espacial from "../images/bebidaEspacio.jpg";
 		</ul>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-		font-family: gabarito;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4em;
-		font-weight: 900;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-		font-weight: 900;
-		font-family: gabarito;
-		/*font-family: 'moul';*/
-		/*color: rgb(4, 57, 131);*/
-		/*color: rgb(35, 250, 175);*/
-		
-		/*color: rgb(255, 255, 255);
-		text-shadow: 4px 0px 1px rgb(1, 202, 102);*/
-		color: rgb(255, 255, 255);
-		text-shadow: 5px 0px 1px rgb(0, 146, 63);
-	}
-	@media (max-width: 720px) {
-		h1 {
-			font-size: 60px;
-		}
-	}
-	@media (max-width: 520px) {
-		h1 {
-			font-size: 40px;
-		}
-	}
-	/*.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}*/
-	
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-	.coctelinicio {
-		text-align: center;
-	}
-	.coctelinicio img {
-		width: 45%;
-		height: 45%;
-		border-radius: 1em;
-	}
-</style>
+<script src="../pages/efecto.js"></script>

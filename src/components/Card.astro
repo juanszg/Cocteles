@@ -16,12 +16,38 @@ interface Props {
 	bebida11: string;
 }
 
-const {href,title,body,bebida1,bebida2,bebida3,bebida4,bebida5,bebida6,bebida7,bebida8,bebida9,bebida10,bebida11,} = Astro.props;
+const {
+	href,
+	title,
+	body,
+	bebida1,
+	bebida2,
+	bebida3,
+	bebida4,
+	bebida5,
+	bebida6,
+	bebida7,
+	bebida8,
+	bebida9,
+	bebida10,
+	bebida11,
+} = Astro.props;
 import botella from "../pages/Appleton_Estate.jpg";
 ---
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Emblema+One&family=Honk&family=Jersey+10&family=Kosugi+Maru&family=Moul&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Emblema+One&family=Honk&family=Jersey+10&family=Kosugi+Maru&family=Moul&family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Dirt&family=Rubik+Glitch&family=Rubik+Mono+One&family=Suez+One&display=swap"
+	rel="stylesheet"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+	rel="stylesheet"
+/>
 
 <li class="link-card">
 	<a href={href}>
@@ -49,7 +75,7 @@ import botella from "../pages/Appleton_Estate.jpg";
 					{bebida7}<br />
 					{bebida8}<br />
 					{bebida9}<br />
-					{bebida10}<br/ >
+					{bebida10}<br />
 					{bebida11}
 				</p>
 			</div>
@@ -76,14 +102,20 @@ import botella from "../pages/Appleton_Estate.jpg";
 		display: flex;
 		padding: 0.2em;
 		/*background-color: rgb(0, 103, 193);*/
-		background-color: #3bb099;
-		background-image: none;
+		/*background-color: #3bb099;*/
+		background-color: rgb(0, 188, 25);
+		height: 17em;
+		background-image: url("../components/ruidoBackground.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		border-radius: 10px;
+		/*background-image: none;
 		background-size: 400%;
 		border-radius: 10px;
 		background-position: 100%;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		/*box-shadow: inset 0 0 0 1px rgba(4, 234, 88, 0.1);*/
-		height: 17em;
+
 		/*width: 13em;*/
 	}
 	.link-card > a {
@@ -104,8 +136,10 @@ import botella from "../pages/Appleton_Estate.jpg";
 		/*color: rgb(120, 240, 244);*/
 		color: rgb(105, 253, 167);
 		/*font-family: 'Rubik 80s Fade';*/
-		font-family: emblema one;
+		/*font-family: emblema one;*/
+		font-family: gabarito;
 		text-shadow: 4px 4px 1px rgb(0, 0, 0);
+		padding: 0.3em;
 	}
 	p {
 		text-align: left;

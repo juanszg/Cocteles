@@ -6,178 +6,8 @@ import toroBravo from "../images/tequila/toro-bravo.png";
 import Header from "../components/Header.astro";
 ---
 
-<head>
-    <meta charset="UTF-8" />
-    <html lang="es">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
-            rel="stylesheet"
-        />
-    </html>
-
-    <body>
-        <div class="header">
-            <Header />
-        </div>
-        <h1>TEQUILA</h1>
-        <div class="numero-2">
-            <div class="grid-1">
-                <div class="bebida">
-                    <Bebida
-                        tituloBebida="Toro Bravo"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 2oz tequila - 3oz licor de cafe - twist de limón"
-                        metodo="Verter tequila como base, agregar licor de cafe y decorar con twist "
-                    />
-                </div>
-                <div class="imagen-coctel">
-                    <img src={toroBravo.src} alt="botella" />
-                </div>
-
-                <div class="bebida-2">
-                    <Bebida
-                        tituloBebida="Tequila Sunrise"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 3oz tequila - Granadina - Jugo de naranja"
-                        metodo="En un vaso con hielos verter tequila, rellenar con jugo de naranja, agregar dash de granadina "
-                    />
-                </div>
-                <div class="imagen-coctel-2">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-            </div>
-
-            <div class="grid-1">
-                <div class="bebida">
-                    <Bebida
-                        tituloBebida="Margarita"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 3oz de tequila - 2oz jugo de limón - 2 1/2 oz de jarabe natural - 2 1/2 oz de licor de naranja"
-                        metodo="Escarchar el vaso (azúcar o sal) licuar todos los ingredientes hasta obtener el punto frozen "
-                    />
-                </div>
-                <div class="imagen-coctel">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-                <div class="bebida-2">
-                    <Bebida
-                        tituloBebida="Blue Margarita"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 3oz tequila - 2oz jugo de limon - 2 1/2oz de jarabe natural - 2 oz licor de naranja - Curacao"
-                        metodo="Escarchar el vaso (azúcar o sal) licuar todos los ingredientes hasta obtener el punto frozen agregar curacao y licuar "
-                    />
-                </div>
-                <div class="imagen-coctel-2">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-            </div>
-            <!-- Elemento 3 -->
-            <div class="grid-1">
-                <div class="bebida">
-                    <Bebida
-                        tituloBebida="Paloma"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 2oz tequila - Refresco de toronja - 1oz de jugo de limon - sal"
-                        metodo="Escarchar vaso con sal, agregar hielo a tope verter tequila y jugo de limón, rellenar con refresco"
-                    />
-                </div>
-                <div class="imagen-coctel">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-                <div class="bebida-2">
-                    <Bebida
-                        tituloBebida="Tequila Sunrise con Hierbabuena"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 3oz tequila - Granadina - Jugo de naranja - Hierbabuena"
-                        metodo="En un vaso con hielos verter tequila, rellenar con jugo de naranja, agregar dash de granadina agregar hojas o infusión de hierbabuena"
-                    />
-                </div>
-                <div class="imagen-coctel-2">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-            </div>
-            <!-- Elemento 4 -->
-            <div class="grid-1">
-                <div class="bebida">
-                    <Bebida
-                        tituloBebida="Iguana Green"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 1 1/4 oz tequila - 1oz de midori - 1oz jarabe natural - 1/4 jugo de limon - Agua mineral"
-                        metodo="Escarchar el vaso (azúcar) verter tequila agregar jarabe natural, agregar midori agregar jugo de limón, rellenar con agua mineral"
-                    />
-                </div>
-                <div class="imagen-coctel">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-                <div class="bebida-2">
-                    <Bebida
-                        tituloBebida="TNT"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 2oz tequila - 1oz de jugo de limon - Chamoy - Refresco de toronja - Agua mineral - Chile en polvo"
-                        metodo="Escarchar el vaso (chamoy y poquin) verter tequila, agregar jugo de limón rellenar con refresco"
-                    />
-                </div>
-                <div class="imagen-coctel-2">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-            </div>
-            <!-- Elemento 5 -->
-            <div class="grid-1">
-                <div class="bebida">
-                    <Bebida
-                        tituloBebida="Malinche"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 2oz tequila - Pure de mango - Jugo de arandano"
-                        metodo="Agregar tequila a la licuadora, agregar puré de mango y jugo de arándano, licuar con hielo a punto frozen  "
-                    />
-                </div>
-                <div class="imagen-coctel">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-                <div class="bebida-2">
-                    <Bebida
-                        tituloBebida="Rosa Mexicana"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 2 1/2oz de tequila - Jugo de naranja - Pure de granadina - Jugo de granada - Jugo de limon - Tuna roja/pitaya"
-                        metodo="Agregar tequila a la licuadora, puré de guanabana, tuna roja/pitaya, jugo de naranja jugo de limón, jugo de granada, y licuar a punto frozen "
-                    />
-                </div>
-                <div class="imagen-coctel-2">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-            </div>
-            <!-- Elemento 6 -->
-            <div class="grid-1">
-                <div class="bebida">
-                    <Bebida
-                        tituloBebida="Abuela"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 1 1/4 tequila - Jugo de arandano - Salsa inglesa - Clamato - Jugo de limon - Cerveza - Chamoy - Miguelito"
-                        metodo="Escarchar el vaso con chamoy y miguelito, verter jugo de limón, agregar clamato y los dash de salsa maggie e inglesa, revolver con la cuchara y finalizar rellenando con cerveza "
-                    />
-                </div>
-                <div class="imagen-coctel">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-                <div class="bebida-2">
-                    <Bebida
-                        tituloBebida="Me he de comer esa Tuna"
-                         dificultad="Dificultad: ⭐⭐⭐⭐"
-                        ingredientes="Ingredientes: - 2 1/2 oz de tequila - Jarabe natural - Pure de Guanabana - Granos de granada - Jugo de limon - Tuna verde"
-                        metodo="En la licuadora agregar tequila, jarabe natural puré de guanábana, tuna un poco de jugo de limón licuar a punto frozen y en el vaso decorar con la granada "
-                    />
-                </div>
-                <div class="imagen-coctel-2">
-                    <img src={botellaRon.src} alt="botella" />
-                </div>
-            </div>
-        </div>
-    </body>
-
-    <style>
-        main {
+<style>
+   main {
             font-family: gabarito;
         }
         body {
@@ -185,24 +15,23 @@ import Header from "../components/Header.astro";
             margin: 0px;
             padding: 0px;
             /*background-color: rgb(0, 80, 53);*/
-            background-color: rgb(99, 0, 0);
+            background-color: rgb(118, 0, 0);
             background-image: url("../components/ruidoBackground.png");
         }
         h1 {
             text-align: center;
             font-size: 4em;
             font-weight: bold;
-            font-family: Georgia, "Times New Roman", Times, serif;
-            color: azure;
-            text-shadow: 2px 2px 1px rgb(203, 0, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 1px rgb(255, 0, 0);
         }
         .grid-1 {
             margin: 2em;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+    
         }
         .bebida {
             grid-area: 1 / 1 / 2 / 2;
@@ -240,7 +69,7 @@ import Header from "../components/Header.astro";
         img {
             border-radius: 1em;
         }
-        @media (max-width: 800px) {
+        @media (max-width:800px) {
             .imagen-coctel img {
                 width: 11em;
                 height: 19em;
@@ -252,8 +81,7 @@ import Header from "../components/Header.astro";
                 display: grid;
                 grid-template-rows: repeat(4, 1fr);
                 grid-template-columns: 1fr;
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
+                
             }
             .bebida {
                 grid-area: 1 / 1 / 2 / 2;
@@ -284,5 +112,174 @@ import Header from "../components/Header.astro";
                 grid-row-gap: 0px;
             }
         }
-    </style>
+</style>
+<head>
+    <html lang="es">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+            rel="stylesheet"
+        />
+    </html>
 </head>
+<body>
+    <div class="header">
+        <Header />
+    </div>
+    <h1>TEQUILA</h1>
+    <div class="numero-2">
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Toro Bravo"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 2oz tequila - 3oz licor de cafe - twist de limón"
+                    metodo="Verter tequila como base, agregar licor de cafe y decorar con twist "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={toroBravo.src} alt="botella" />
+            </div>
+
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Tequila Sunrise"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 3oz tequila - Granadina - Jugo de naranja"
+                    metodo="En un vaso con hielos verter tequila, rellenar con jugo de naranja, agregar dash de granadina "
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+        </div>
+
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Margarita"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 3oz de tequila - 2oz jugo de limón - 2 1/2 oz de jarabe natural - 2 1/2 oz de licor de naranja"
+                    metodo="Escarchar el vaso (azúcar o sal) licuar todos los ingredientes hasta obtener el punto frozen "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Blue Margarita"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 3oz tequila - 2oz jugo de limon - 2 1/2oz de jarabe natural - 2 oz licor de naranja - Curacao"
+                    metodo="Escarchar el vaso (azúcar o sal) licuar todos los ingredientes hasta obtener el punto frozen agregar curacao y licuar "
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+        </div>
+        <!-- Elemento 3 -->
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Paloma"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 2oz tequila - Refresco de toronja - 1oz de jugo de limon - sal"
+                    metodo="Escarchar vaso con sal, agregar hielo a tope verter tequila y jugo de limón, rellenar con refresco"
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Tequila Sunrise con Hierbabuena"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 3oz tequila - Granadina - Jugo de naranja - Hierbabuena"
+                    metodo="En un vaso con hielos verter tequila, rellenar con jugo de naranja, agregar dash de granadina agregar hojas o infusión de hierbabuena"
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+        </div>
+        <!-- Elemento 4 -->
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Iguana Green"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 1 1/4 oz tequila - 1oz de midori - 1oz jarabe natural - 1/4 jugo de limon - Agua mineral"
+                    metodo="Escarchar el vaso (azúcar) verter tequila agregar jarabe natural, agregar midori agregar jugo de limón, rellenar con agua mineral"
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="TNT"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 2oz tequila - 1oz de jugo de limon - Chamoy - Refresco de toronja - Agua mineral - Chile en polvo"
+                    metodo="Escarchar el vaso (chamoy y poquin) verter tequila, agregar jugo de limón rellenar con refresco"
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+        </div>
+        <!-- Elemento 5 -->
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Malinche"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 2oz tequila - Pure de mango - Jugo de arandano"
+                    metodo="Agregar tequila a la licuadora, agregar puré de mango y jugo de arándano, licuar con hielo a punto frozen  "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Rosa Mexicana"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 2 1/2oz de tequila - Jugo de naranja - Pure de granadina - Jugo de granada - Jugo de limon - Tuna roja/pitaya"
+                    metodo="Agregar tequila a la licuadora, puré de guanabana, tuna roja/pitaya, jugo de naranja jugo de limón, jugo de granada, y licuar a punto frozen "
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+        </div>
+        <!-- Elemento 6 -->
+        <div class="grid-1">
+            <div class="bebida">
+                <Bebida
+                    tituloBebida="Abuela"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 1 1/4 tequila - Jugo de arandano - Salsa inglesa - Clamato - Jugo de limon - Cerveza - Chamoy - Miguelito"
+                    metodo="Escarchar el vaso con chamoy y miguelito, verter jugo de limón, agregar clamato y los dash de salsa maggie e inglesa, revolver con la cuchara y finalizar rellenando con cerveza "
+                />
+            </div>
+            <div class="imagen-coctel">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+            <div class="bebida-2">
+                <Bebida
+                    tituloBebida="Me he de comer esa Tuna"
+                    dificultad="Dificultad: ⭐⭐⭐⭐"
+                    ingredientes="Ingredientes: - 2 1/2 oz de tequila - Jarabe natural - Pure de Guanabana - Granos de granada - Jugo de limon - Tuna verde"
+                    metodo="En la licuadora agregar tequila, jarabe natural puré de guanábana, tuna un poco de jugo de limón licuar a punto frozen y en el vaso decorar con la granada "
+                />
+            </div>
+            <div class="imagen-coctel-2">
+                <img src={botellaRon.src} alt="botella" />
+            </div>
+        </div>
+    </div>
+</body>

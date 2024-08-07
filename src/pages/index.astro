@@ -54,6 +54,13 @@ import espacial from "../images/bebidaEspacio.jpg";
             color: rgb(0, 143, 63);
             text-shadow: 5px 0px 1px rgb(227, 227, 227);
         }
+		svg{
+			width: 100%;
+			position: absolute;
+			z-index: -1;
+			top: 80px;
+			opacity: 65%;
+		}
 	/* SEGUNDA VERSION COLORES 
 	h1 {
 		font-family: "Gabarito";
@@ -149,7 +156,13 @@ import espacial from "../images/bebidaEspacio.jpg";
 		border-radius: 1em;
 	}
 </style>
-
+<svg width="1101" height="126" viewBox="0 0 1101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<line y1="12.5" x2="1101" y2="12.5" stroke="#04F700" stroke-width="25"/>
+	<line y1="37.75" x2="1101" y2="37.75" stroke="#04D300" stroke-width="25"/>
+	<line y1="63" x2="1101" y2="63" stroke="#03AC00" stroke-width="25"/>
+	<line y1="88.25" x2="1101" y2="88.25" stroke="#028700" stroke-width="25"/>
+	<line y1="113.5" x2="1101" y2="113.5" stroke="#00873D" stroke-width="25"/>
+	</svg>
 <Layout title="Cocteles">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -172,7 +185,8 @@ import espacial from "../images/bebidaEspacio.jpg";
 		<div class="coctelinicio">
 			<!--<img src={espacial.src} alt="botella">	 -->
 		</div>
-
+		
+			
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/Ron"

@@ -1,4 +1,3 @@
-alert('cocteles maximum premium 🥇🥇🥇🥇🥇');
 
 
 document.addEventListener('DOMContentLoaded', () => {

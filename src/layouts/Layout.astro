@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -16,49 +16,88 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
-	</body>
-</html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		/*--accent-gradient: linear-gradient(
+	<div class="container">
+		<body>
+			<div class="space space-1"></div>
+			<div class="space space-2"></div>
+			<div class="space space-3"></div>
+			<slot />
+		</body>
+	</div>
+
+	<style is:global>
+		:root {
+			overflow-x: hidden;
+			--accent: 136, 58, 234;
+			--accent-light: 224, 204, 250;
+			--accent-dark: 49, 10, 101;
+			/*--accent-gradient: linear-gradient(
 			45deg,
 			rgb(var(--accent)),
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
 		*/
-		--accent-gradient: linear-gradient(
-			60deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		/*background: #13151a;*/
-		/*background-image: url('/src/pages/green-purple.png');*/
-		/*background-size: 224px;*/
-		background-image: url('../components/ruidoBackground.png');
-		/*background-color: rgb(1, 199, 133);*/
-		background-color: rgb(0, 155, 103);
-		
+			--accent-gradient: linear-gradient(
+				60deg,
+				rgb(var(--accent)),
+				rgb(var(--accent-light)) 30%,
+				white 60%
+			);
+		}
+		html {
+			font-family: system-ui, sans-serif;
+			/*background: #13151a;*/
+			/*background-image: url('/src/pages/green-purple.png');*/
+			/*background-size: 224px;*/
+			/*background-image: url('../components/ruidoBackground.png');*/ /* EDITE ULTIMO */
+			/*background-color: rgb(1, 199, 133);*/
+			background-image: linear-gradient(#051327, #000);
+			/*background-color: rgb(0, 155, 103);*/
+		}
+		code {
+			font-family:
+				Menlo,
+				Monaco,
+				Lucida Console,
+				Liberation Mono,
+				DejaVu Sans Mono,
+				Bitstream Vera Sans Mono,
+				Courier New,
+				monospace;
+		}
+		/* EFECTO */
+		.container {
+			background-image: linear-gradient(#051327, #000);
+			/*position: fixed;
+    inset: 0;*/
+		}
 
+		.space {
+			/* --size: 2px;
+    --space-layer:
+        4vw 50vh 0 #fff,
+        18vw 88vh 0 #fff;
+ */
+			width: var(--size);
+			height: var(--size);
+			background: #fff;
+			box-shadow: var(--space-layer);
+			top: 0;
+			left: 0;
+			opacity: 75%;
+			animation: moveStars var(--duration, 20s) linear infinite;
+		}
 
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+		@keyframes moveStars {
+			from {
+				transform: translateY(0);
+			}
+
+			to {
+				transform: translateY(-100vh);
+			}
+		}
+	</style>
+	<script src="../components/efecto.js"></script>
+</html>

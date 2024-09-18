@@ -28,39 +28,151 @@ import espacial from "../images/bebidaEspacio.jpg";
 		z-index: -1;
 	}
 	h1 {
-            text-align: center;
-            font-size: 4em;
-            font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(255, 255, 255);
-            text-shadow: 3px 3px 1px rgb(0, 146, 63);
-            font-weight: 800;
-            transition:
-                color 0.2s ease-in-out,
-                text-shadow 0.25s ease-in-out;
-        }
-        h1 span {
-            transition:
-                color 0.2s ease-in-out,
-                text-shadow 0.25s ease-in-out;
-        }
-        .color1 {
-            color: green;
-        }
-        .color2 {
-            color: white;
-        }
-        h1 span:hover {
-            color: rgb(0, 143, 63);
-            text-shadow: 5px 0px 1px rgb(227, 227, 227);
-        }
-		svg{
-			width: 100%;
-			position: absolute;
-			z-index: -1;
-			top: 80px;
-			opacity: 65%;
+		--shadowt: 3px 2px 0px rgb(0, 146, 63), 3px -2px 0px rgb(0, 255, 47),
+			-3px 2px 0px rgb(0, 255, 170);
+		--shadow2: 3px 2px 0px rgb(41, 0, 146), 3px -2px 0px rgb(0, 115, 255),
+		-3px 2px 0px rgb(0, 238, 255);
+		--shadow3: 3px 2px 0px rgb(132, 0, 146), 3px -2px 0px rgb(128, 0, 255),
+		-3px 2px 0px rgb(255, 0, 157);
+
+		text-align: center;
+		font-size: 4em;
+		font-weight: bold;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		color: #fff7e8;
+		/*text-shadow: 3px 3px 1px rgb(0, 146, 63);*/
+		text-shadow: var(--shadowt);
+		font-weight: 800;
+		transition:
+			color 0.2s ease-in-out,
+			text-shadow 0.25s ease-in-out;
+		animation: colores 5s ease-in-out infinite;
+	}
+	@keyframes colores {
+
+		0% {
+			/*color: rgb(0, 255, 26);*/
 		}
+		50% {
+			/*color: blueviolet;*/
+			text-shadow: var(--shadow3);
+		}
+		85% {
+		/*color: aqua;*/
+			text-shadow: var(--shadow2);
+		}
+		100% {
+			/*color: rgb(0, 255, 26);*/
+			text-shadow: var(--shadowt);
+		}
+	}
+	/*h1 span {
+		transition:
+			color 0.2s ease-in-out,
+			text-shadow 0.25s ease-in-out;
+	}
+	.color1 {
+		color: green;
+	}
+	.color2 {
+		color: white;
+	}
+	/*h1 span:hover {
+		color: rgb(0, 143, 63);
+		text-shadow: 5px 0px 1px rgb(227, 227, 227);
+		
+	}*/
+	svg {
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+		top: 80px;
+		opacity: 65%;
+	}
+	.containf {
+		/*width: 100%;*/
+		height: 80px;
+		position: absolute;
+		top: 100px;
+		display: flex;
+		gap: 600px;
+	}
+	/*.containf2 {
+		width: 100%;
+		height: 80px;
+		position: absolute;
+		top: 100px;
+		left: 10%;
+		display: flex;
+		gap: 600px;
+		flex-direction:start;
+	}
+	*/
+	/*.flowers {
+		background-image: url("../images/flower.png");
+		width: 100px;
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		animation: rotacion 3s linear infinite;
+	}
+	/*.frotate1 {
+		background-image: url("../images/flower.png");
+		width: 100px;
+		height: 100%;
+		background-size: contain;
+		transform: rotate(180deg);
+		filter: invert(100);
+		background-repeat: no-repeat;
+		z-index: -1;
+		
+	}*/
+	/*.flowers2 {
+		background-image: url("../images/flower.png");
+		width: 100px;
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		animation: rotacion 3s linear infinite;
+		/*position: fixed;
+		top: 100px;
+		left: 75%;
+	}
+	@keyframes rotacion{
+		0%{
+			transform: rotate(0deg);
+			
+		}
+		25%{
+			transform: rotate(90deg);
+		
+		}
+		50%{
+			transform: rotate(180deg);
+		
+		}
+		75%{
+			transform: rotate(270deg);
+		
+		}
+		100%{
+			transform: rotate(360deg);
+		
+		}
+	}
+	/*.frotate2 {
+		background-image: url("../images/flower.png");
+		width: 100px;
+		height: 100%;
+		background-size: contain;
+		transform: rotate(180deg);
+		filter: invert(100);
+		background-repeat: no-repeat;
+		z-index: -1;
+	
+	}
+		*/
+
 	/* SEGUNDA VERSION COLORES 
 	h1 {
 		font-family: "Gabarito";
@@ -127,10 +239,16 @@ import espacial from "../images/bebidaEspacio.jpg";
 		h1 {
 			font-size: 60px;
 		}
+		svg {
+			top: 50px;
+		}
 	}
 	@media (max-width: 520px) {
 		h1 {
 			font-size: 40px;
+		}
+		svg {
+			top: 20px;
 		}
 	}
 	/*.text-gradient {
@@ -155,15 +273,26 @@ import espacial from "../images/bebidaEspacio.jpg";
 		height: 45%;
 		border-radius: 1em;
 	}
+	/* EFECTO */
 </style>
-<svg width="1101" height="126" viewBox="0 0 1101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<line y1="12.5" x2="1101" y2="12.5" stroke="#04F700" stroke-width="25"/>
-	<line y1="37.75" x2="1101" y2="37.75" stroke="#04D300" stroke-width="25"/>
-	<line y1="63" x2="1101" y2="63" stroke="#03AC00" stroke-width="25"/>
-	<line y1="88.25" x2="1101" y2="88.25" stroke="#028700" stroke-width="25"/>
-	<line y1="113.5" x2="1101" y2="113.5" stroke="#00873D" stroke-width="25"/>
-	</svg>
-		
+<svg
+	width="1101"
+	height="126"
+	viewBox="0 0 1101 126"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<line y1="12.5" x2="1101" y2="12.5" stroke="#04F700" stroke-width="25"
+	></line>
+	<line y1="37.75" x2="1101" y2="37.75" stroke="#04D300" stroke-width="25"
+	></line>
+	<line y1="63" x2="1101" y2="63" stroke="#03AC00" stroke-width="25"></line>
+	<line y1="88.25" x2="1101" y2="88.25" stroke="#028700" stroke-width="25"
+	></line>
+	<line y1="113.5" x2="1101" y2="113.5" stroke="#00873D" stroke-width="25"
+	></line>
+</svg>
+
 <Layout title="Cocteles">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -186,8 +315,17 @@ import espacial from "../images/bebidaEspacio.jpg";
 		<div class="coctelinicio">
 			<!--<img src={espacial.src} alt="botella">	 -->
 		</div>
-		
-			
+		<div class="containf">
+			<div class="flowers"></div>
+			<div class="flowers2"></div>
+		</div>
+		<!-- CONTENEDOR FLORES ROTADAS 2
+		<div class="containf2">
+			<div class="frotate1"></div>
+			<div class="frotate2"></div>
+		</div>
+		-->
+
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/Ron"
@@ -275,4 +413,3 @@ import espacial from "../images/bebidaEspacio.jpg";
 		</ul>
 	</main>
 </Layout>
-
